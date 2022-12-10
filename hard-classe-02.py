@@ -31,15 +31,21 @@ class Hardware:
       
     def get_cpu_percent(self):
         # Retorna a quantidade de porcentagem de uso da CPU
-        return self.cpu.percent
+        # gerando um erro na linha abaixo
+        # return self.cpu.cpu_percent(interval=1)
+        pass
       
     def get_cpu_count(self):
         # Retorna a quantidade de núcleos da CPU
-        return self.cpu.count
+        # gerando um erro na linha abaixo
+        # return self.cpu.count
+        pass
       
     def get_cpu_freq(self):
         # Retorna a frequência da CPU em MHz
-        return self.cpu.freq
+        # gerando um erro na linha abaixo
+        # return self.cpu.freq
+        pass
     
     def get_disk_total(self):
         # Retorna o tamanho total do disco em bytes
@@ -82,6 +88,11 @@ uso_cpu = hw.get_cpu_percent()
 quantidade_nucleos = hw.get_cpu_count()
 freq_cpu = hw.get_cpu_freq()
 
+# disco
+total_disk = hw.get_disk_total()
+uso_disk = hw.get_disk_used()
+free_disk = hw.get_disk_free()
+
 # memoria
 print(f"Total memory: {total_memory} bytes")
 print(f"Used memory: {used_memory} bytes")
@@ -91,3 +102,8 @@ print(f"Free memory: {free_memory} bytes")
 print(f"Uso da CPU: {uso_cpu} %")
 print(f"Quantidade de núcleos: {quantidade_nucleos}")
 print(f"Frequência da CPU: {freq_cpu} MHz")
+
+# disco
+print(f"Total disk: {total_disk} bytes")
+print(f"Used disk: {uso_disk} bytes")
+print(f"Free disk: {free_disk} bytes")
