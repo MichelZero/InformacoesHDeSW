@@ -88,3 +88,6 @@ print(f"Used memory: {used_memory} bytes")
 print(f"Free memory: {free_memory} bytes")
 
 # cpu
+print(f"Uso da CPU: {uso_cpu} %")
+print(f"Quantidade de núcleos: {quantidade_nucleos}")
+print(f"Frequência da CPU: {freq_cpu} MHz")
